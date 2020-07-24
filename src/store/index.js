@@ -78,6 +78,139 @@ export default new Vuex.Store({
           '53364-3.jpg',
         ]
       },
+      {
+        name: "Floral Ruffle Wrap Dress",
+        id: 53365,
+        featured: true,
+        price: 129,
+        color: "navy",
+        size: 6,
+        gender: "women",
+        quantity: 5,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Dresses",
+        details: {
+          material: "nylon",
+          fit: "Fitted through the chest and waist, flare skirt.",
+          maintenance: "machine wash cold with like colors, air dry",
+          additional: "Wrap waist with internal button closure for an extra secure fit."
+        },
+        images: [
+          '53365-1.jpg',
+          '53365-2.jpg',
+          '53365-3.jpg',
+        ]
+      },
+      {
+        name: "SUPIMA® Cotton T-Shirt",
+        id: 53366,
+        featured: false,
+        price: 20.7,
+        color: "white",
+        size: "small",
+        gender: "women",
+        quantity: 5,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Shirts",
+        details: {
+          material: "cotton",
+          fit: "Fitted shoulders and chest, straight through the waist and hip.",
+          maintenance: "machine wash warm with like colors, tumble dry low",
+          additional: "Crew neck. Short sleeves with fixed, rolled cuffs."
+        },
+        images: [
+          '53366-1.jpg',
+          '53366-2.jpg',
+        ]
+      },
+      {
+        name: "Squareneck Tank Top",
+        id: 53367,
+        featured: false,
+        price: 49.5,
+        color: "navy",
+        size: "medium",
+        gender: "men",
+        quantity: 10,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Shirts",
+        details: {
+          material: "cotton",
+          fit: "A little room through the chest, arms and waist.",
+          maintenance: "machine wash warm with like colors, tumble dry low",
+          additional: "Rib-knit polo collar. Short sleeves with rib-knit trim."
+        },
+        images: [
+          '53367-1.jpg',
+        ]
+      },
+      {
+        name: "Utility Jumpsuit",
+        id: 53368,
+        featured: false,
+        price: 69.5,
+        color: "green",
+        size: {
+          waist: 32
+        },
+        gender: "men",
+        quantity: 10,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Shorts",
+        details: {
+          material: "cotton",
+          fit: "Sits at the waist, slim through the thigh.",
+          maintenance: "machine wash warm with like colors, tumble dry low",
+          additional: "9-inch inseam"
+        },
+        images: [
+          '53368-1.jpg',
+          '53368-2.jpg',
+        ]
+      },
+      {
+        name: "Short Sleeve Wrap-Front Top",
+        id: 53369,
+        featured: false,
+        price: 128.5,
+        color: "black",
+        size: 8,
+        gender: "women",
+        quantity: 10,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Shoes",
+        details: {
+          material: "leather",
+          fit: "Breathable synthetic lining. Insole with added stability in the heel.",
+          maintenance: "",
+          additional: "3.3-inch heel height"
+        },
+        images: [
+          '53369-1.jpg',
+        ]
+      },
+      {
+        name: "Squareneck Short Sleeve Bodysuit",
+        id: 53370,
+        featured: false,
+        price: 114.99,
+        color: "navy",
+        size: 10,
+        gender: "men",
+        quantity: 10,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Shoes",
+        details: {
+          material: "suede",
+          fit: "Our Advanced Comfort Technology insoles include shock absorption in the heel, arch support and breathable flex on the toe pads.",
+          maintenance: "",
+          additional: "Flat laces"
+        },
+        images: [
+          '53370-1.jpg',
+          '53370-2.jpg',
+        ]
+      },
     ]
   },
   mutations: {
