@@ -10,6 +10,7 @@ export default new Vuex.Store({
       {
         name: "Denim Dress",
         id: 53362,
+        featured: false,
         price: 9.5,
         color: "white",
         size: "small",
@@ -32,6 +33,7 @@ export default new Vuex.Store({
       {
         name: "Cardigan Sweater",
         id: 53363,
+        featured: true,
         price: 49.5,
         color: "red",
         size: "medium",
@@ -56,6 +58,7 @@ export default new Vuex.Store({
       {
         name: "Slim Fit Jeans",
         id: 53364,
+        featured: true,
         price: 29.5,
         color: "navy",
         size: {
@@ -81,7 +84,7 @@ export default new Vuex.Store({
       {
         name: "Floral Ruffle Wrap Dress",
         id: 53365,
-        featured: true,
+        featured: false,
         price: 129,
         color: "navy",
         size: 6,
@@ -171,7 +174,7 @@ export default new Vuex.Store({
       {
         name: "Short Sleeve Wrap-Front Top",
         id: 53369,
-        featured: false,
+        featured: true,
         price: 128.5,
         color: "black",
         size: 8,
@@ -250,6 +253,15 @@ export default new Vuex.Store({
           product => product.id === itemId
         )
       )
+    },
+    featuredProducts: (state) => {
+      return state.products.filter(p => p.featured)
     }
+    },
+    productsByGender: (state) => (gender) => {
+      return state.products.filter(p => p.gender === gender)
+  },
+  productsByCategory: (category) => {
+      return this.state.products.filter(p => p.category === category)
   }
 });

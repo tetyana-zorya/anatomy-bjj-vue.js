@@ -1,28 +1,21 @@
 <template>
-  <div id="app">
-    <div id="nav" class="wrapper flex-col flex-col--align-center">
-      <h1 class="flex-col--2">MyStore</h1>
-      <div class="flex-col--2 nav-items">
-        <router-link to="/" class="nav-items__item">Home</router-link>
-        <router-link to="/cart" class="nav-items__item">
-          Cart
-          <counter-badge :count="cartCount"></counter-badge>
-        </router-link>
-      </div>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-content>
+    <NavBar />
+    </v-content>
+    <v-content>
+    <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import CounterBadge from '@/components/CounterBadge';
+import NavBar from '@/components/NavBar';
+
 export default {
-  name: 'app',
-  components: { CounterBadge },
-  computed: {
-    cartCount() {
-      return this.$store.state.cart.length
-    }
+  name:'navbar',
+  components: {
+    NavBar,
   }
 }
 </script>
@@ -34,26 +27,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
-  }
-}
-.nav-items {
-  justify-content: flex-end;
-  display: flex;
-}
-.nav-items__item {
-  margin-left: 1rem;
-  position: relative;
-}
-ul {
-  padding-left: 0;
-  list-style: none;
+.no-under {
+  text-decoration: none;
 }
 </style>

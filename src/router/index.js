@@ -1,16 +1,23 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/views/Home.vue';
+import Shop from '@/views/Shop.vue';
 import Product from '@/views/Product.vue';
 import Cart from '@/views/Cart.vue';
+import GenderOverview from '@/views/GenderOverview.vue';
+import Home from '@/views/Home.vue';
 
 Vue.use(VueRouter)
 
   const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+    path: '/shop',
+    name: 'Shop',
+    component: Shop
   },
   {
     path: '/products/:id',
@@ -29,6 +36,11 @@ Vue.use(VueRouter)
     path: '/cart/',
     name: 'cart',
     component: Cart,
+  },
+  {
+    path: '/:gender/',
+    name: 'gender-overview',
+    component: GenderOverview,
   },
 ]
 
