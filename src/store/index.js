@@ -5,16 +5,18 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cart: [ 53363 ],
+    cart: [ ],
     products: [
       {
-        name: "Denim Dress",
+        name: "Kyosai Demons Rash Guard",
         id: 53362,
         featured: false,
-        price: 9.5,
-        color: "white",
-        size: "small",
-        gender: "men",
+        apparel: false,
+        gear: true,
+        price: 49.99,
+        color: "grey",
+        sizes: ['xs-small','small','medium','large','x-large'],
+        gender:'women',
         quantity: 10,
         dateAdded: "Tue Mar 24 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shirts",
@@ -37,7 +39,8 @@ export default new Vuex.Store({
         price: 49.5,
         color: "red",
         size: "medium",
-        gender: "women",
+        women: true,
+        men: false,
         quantity: 8,
         dateAdded: "Mon Mar 23 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Sweaters",
@@ -65,7 +68,7 @@ export default new Vuex.Store({
           waist: 32,
           length: 32,
         },
-        gender: "men",
+        gender:'women',
         quantity: 5,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Pants",
@@ -88,7 +91,7 @@ export default new Vuex.Store({
         price: 129,
         color: "navy",
         size: 6,
-        gender: "women",
+        gender:'women',
         quantity: 5,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Dresses",
@@ -108,10 +111,10 @@ export default new Vuex.Store({
         name: "SUPIMA® Cotton T-Shirt",
         id: 53366,
         featured: false,
+        gender:'women',
         price: 20.7,
         color: "white",
         size: "small",
-        gender: "women",
         quantity: 5,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shirts",
@@ -133,7 +136,7 @@ export default new Vuex.Store({
         price: 49.5,
         color: "navy",
         size: "medium",
-        gender: "men",
+        gender:'women',
         quantity: 10,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shirts",
@@ -156,7 +159,7 @@ export default new Vuex.Store({
         size: {
           waist: 32
         },
-        gender: "men",
+        gender:'women',
         quantity: 10,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shorts",
@@ -178,7 +181,7 @@ export default new Vuex.Store({
         price: 128.5,
         color: "black",
         size: 8,
-        gender: "women",
+        gender:'women',
         quantity: 10,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shoes",
@@ -199,7 +202,7 @@ export default new Vuex.Store({
         price: 114.99,
         color: "navy",
         size: 10,
-        gender: "men",
+        gender:'women',
         quantity: 10,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
         category: "Shoes",
@@ -258,9 +261,12 @@ export default new Vuex.Store({
       return state.products.filter(p => p.featured)
     }
     },
-    productsByGender: (state) => (gender) => {
-      return state.products.filter(p => p.gender === gender)
-  },
+    apparelProducts: (state) => {
+      return state.products.filter(p => p.apparel)
+    },
+    gearProducts: (state) => {
+      return state.products.filter(p => p.gear)
+    },
   productsByCategory: (category) => {
       return this.state.products.filter(p => p.category === category)
   }
