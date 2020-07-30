@@ -14,10 +14,11 @@
           tile
           elevation="0"
         >
-         <router-link :to="{ name: 'product', params: { id: product.id}}">
+         <router-link :to="{ name: 'product', params: { id: product.id}}" style="text-decoration:none;">
             <img class="prod-img" :src="imagePath(product)" alt="">
-            <p>{{ product.name }}</p>
-            <p><em>${{ product.price }}</em></p>
+            <v-btn elevation="0" style="background-color:transparent; padding-top:1em;" class="item-btn" width="210px">
+            <p style="padding-top:1em;">{{ product.name }} <br>${{ product.price }}</p>
+            </v-btn>
           </router-link>
         </v-card>
       </v-col>

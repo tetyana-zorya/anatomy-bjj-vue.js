@@ -17,10 +17,15 @@
     </section>
     </v-container-->
 
-    <v-container height="60vh" class="shop-banner">
+    <v-flex style="height:60vh;">
+        <v-img class="shop-banner" src="@/assets/img/site-img/footlock.png" />
+    </v-flex>
+
+    <v-container style="width:300px; background-color:black; text-align:center; position:relative; bottom:280px; border:solid; border-color:#D4E157; border-width:10px;">
+          <p style="padding-top:.5em; font-size:2em; color:white;"><strong>OUR SHOP</strong></p>
     </v-container>
 
-    <v-card title elevation="0" style="padding-top:4em;">
+    <v-card title elevation="0" style="position:relative; bottom:5em;">
       <itemcard />
     </v-card>
   
@@ -85,9 +90,9 @@ export default {
   color:black;
 }
 .item-btn:hover {
-  color:#82B1FF;
+  color:#D4E157;
 }
 .shop-banner {
-  background-image: url('assets/img/site-img/footlock.png')
+  height:60vh;
 }
 </style>
