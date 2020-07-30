@@ -54,11 +54,7 @@
             <p>{{ total }}</p>
           </li>
         </ul>
-        <button
-          :disabled="!this.selectedShippingOption"
-          class="btn btn--grey total-section__checkout-button">
-            Check out
-        </button>
+         
       </section>
     </div>
   </div>
@@ -66,6 +62,8 @@
 
 <script>
 import { imagePath } from '@/mixins/imagePath';
+
+
 export default {
   name: 'cart',
   mixins: [imagePath],
@@ -73,6 +71,18 @@ export default {
     return {
       salesTax: 0.06,
       selectedShippingOption: '',
+      components: {
+      
+      },
+      credentials: {
+        sandbox: '<sandbox client id>',
+        production: '<production client id>'
+      },
+      experienceOptions: {
+        input_fields: {
+          no_shipping: 1
+        }
+      },
       shippingOptionsArray: [
         {
           text: 'One day',

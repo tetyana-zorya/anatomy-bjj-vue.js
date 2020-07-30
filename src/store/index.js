@@ -8,34 +8,9 @@ export default new Vuex.Store({
     cart: [ ],
     products: [
       {
-        name: "Kyosai Demons Rash Guard",
-        id: 53362,
-        featured: false,
-        apparel: false,
-        gear: true,
-        price: 49.99,
-        color: "grey",
-        sizes: ['xs-small','small','medium','large','x-large'],
-        gender:'women',
-        quantity: 10,
-        dateAdded: "Tue Mar 24 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Shirts",
-        details: {
-          material: "cotton",
-          fit: "regular",
-          maintenance: "machine wash",
-          additional: "Some colors feature different-colored yarns for a heathered effect."
-        },
-        images: [
-          '53362-1.jpg',
-          '53362-2.jpg',
-          '53362-3.jpg',
-        ]
-      },
-      {
-        name: "Cardigan Sweater",
+        name: "Women's Anatomy Rashguard",
         id: 53363,
-        featured: true,
+        featured: false,
         price: 49.5,
         color: "red",
         size: "medium",
@@ -51,15 +26,37 @@ export default new Vuex.Store({
           additional: ""
         },
         images: [
-          '53363-1.jpg',
-          '53363-2.jpg',
-          '53363-3.jpg',
-          '53363-4.jpg',
-          '53363-5.jpg',
+          '53363-2.png',
+          '53363-1.png',
+          
         ]
       },
       {
-        name: "Slim Fit Jeans",
+        name: "Demons Rash Guard",
+        id: 53362,
+        featured: true,
+        apparel: false,
+        gear: true,
+        price: 49.99,
+        color: "grey",
+        sizes: ['xs-small','small','medium','large','x-large'],
+        gender:'men',
+        quantity: 10,
+        dateAdded: "Tue Mar 24 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Rashguards",
+        details: {
+          material: "cotton",
+          maintenance: "machine wash",
+          additional: "Some colors feature different-colored yarns for a heathered effect."
+        },
+        images: [
+          '53362-1.png',
+          '53362-2.jpg',
+          '53362-3.jpg',
+        ]
+      },
+      {
+        name: "Skeletons Tee Unisex",
         id: 53364,
         featured: true,
         price: 29.5,
@@ -79,9 +76,7 @@ export default new Vuex.Store({
           additional: ""
         },
         images: [
-          '53364-1.jpg',
-          '53364-2.jpg',
-          '53364-3.jpg',
+          '53364-1.png',
         ]
       },
       {

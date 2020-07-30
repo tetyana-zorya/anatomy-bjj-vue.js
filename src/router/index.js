@@ -3,8 +3,10 @@ import VueRouter from 'vue-router';
 import Shop from '@/views/Shop.vue';
 import Product from '@/views/Product.vue';
 import Cart from '@/views/Cart.vue';
+import Checkout from '@/views/Checkout.vue';
 import GenderOverview from '@/views/GenderOverview.vue';
 import Home from '@/views/Home.vue';
+
 
 Vue.use(VueRouter)
 
@@ -36,6 +38,11 @@ Vue.use(VueRouter)
     path: '/cart/',
     name: 'cart',
     component: Cart,
+  },
+  {
+    path: '/checkout/',
+    name: 'checkout',
+    component: Checkout,
   },
   {
     path: '/:gender/',
