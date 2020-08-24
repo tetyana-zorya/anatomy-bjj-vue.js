@@ -8,31 +8,28 @@ export default new Vuex.Store({
     cart: [ ],
     products: [
       {
-        name: "Women's Anatomy Rashguard",
-        id: 53363,
+        name: "Men's Anatomy Rashguard",
+        id: 53365,
         featured: false,
-        price: 49.5,
-        color: "red",
-        size: "medium",
-        women: true,
-        men: false,
-        quantity: 8,
-        dateAdded: "Mon Mar 23 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Sweaters",
+        price: 49.99,
+        color: "Black",
+        size: 6,
+        gender:'men',
+        quantity: 5,
+        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Dresses",
         details: {
-          material: "cotton",
-          fit: "regular",
-          maintenance: "machine wash cold, air dry",
-          additional: ""
+          material: "nylon",
+          fit: "Fitted through the chest and waist, flare skirt.",
+          maintenance: "machine wash cold with like colors, air dry",
+          additional: "Wrap waist with internal button closure for an extra secure fit."
         },
         images: [
-          '53363-2.png',
-          '53363-1.png',
-          
+          '53365-1.png',
         ]
       },
       {
-        name: "Demons Rash Guard",
+        name: "Men's Demons Rash Guard",
         id: 53362,
         featured: true,
         apparel: false,
@@ -51,15 +48,15 @@ export default new Vuex.Store({
         },
         images: [
           '53362-1.png',
-          '53362-2.jpg',
-          '53362-3.jpg',
+          '53362-2.png',
+          '53362-3.png',
         ]
       },
       {
-        name: "Skeletons Tee Unisex",
+        name: " Unisex Skeletons Tee",
         id: 53364,
         featured: true,
-        price: 29.5,
+        price: 12.99,
         color: "navy",
         size: {
           waist: 32,
@@ -80,55 +77,34 @@ export default new Vuex.Store({
         ]
       },
       {
-        name: "Floral Ruffle Wrap Dress",
-        id: 53365,
+        name: "Women's Anatomy Rashguard",
+        id: 53363,
         featured: false,
-        price: 129,
-        color: "navy",
-        size: 6,
-        gender:'women',
-        quantity: 5,
-        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Dresses",
-        details: {
-          material: "nylon",
-          fit: "Fitted through the chest and waist, flare skirt.",
-          maintenance: "machine wash cold with like colors, air dry",
-          additional: "Wrap waist with internal button closure for an extra secure fit."
-        },
-        images: [
-          '53365-1.jpg',
-          '53365-2.jpg',
-          '53365-3.jpg',
-        ]
-      },
-      {
-        name: "SUPIMA® Cotton T-Shirt",
-        id: 53366,
-        featured: false,
-        gender:'women',
-        price: 20.7,
-        color: "white",
-        size: "small",
-        quantity: 5,
-        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Shirts",
+        price: 49.99,
+        color: "red",
+        size: "medium",
+        women: true,
+        men: false,
+        quantity: 8,
+        dateAdded: "Mon Mar 23 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+        category: "Sweaters",
         details: {
           material: "cotton",
-          fit: "Fitted shoulders and chest, straight through the waist and hip.",
-          maintenance: "machine wash warm with like colors, tumble dry low",
-          additional: "Crew neck. Short sleeves with fixed, rolled cuffs."
+          fit: "regular",
+          maintenance: "machine wash cold, air dry",
+          additional: ""
         },
         images: [
-          '53366-1.jpg',
-          '53366-2.jpg',
+          '53363-2.png',
+          '53363-1.png',
+          
         ]
       },
       {
-        name: "Squareneck Tank Top",
+        name: " Women's Demons Rashguard",
         id: 53367,
         featured: false,
-        price: 49.5,
+        price: 49.99,
         color: "navy",
         size: "medium",
         gender:'women',
@@ -142,74 +118,28 @@ export default new Vuex.Store({
           additional: "Rib-knit polo collar. Short sleeves with rib-knit trim."
         },
         images: [
-          '53367-1.jpg',
+          '53367-1.png',
         ]
       },
       {
-        name: "Utility Jumpsuit",
-        id: 53368,
+        name: "Skeletons Women's Fit Tee",
+        id: 53366,
         featured: false,
-        price: 69.5,
-        color: "green",
-        size: {
-          waist: 32
-        },
         gender:'women',
-        quantity: 10,
+        price: 12.99,
+        color: "white",
+        size: "small",
+        quantity: 5,
         dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Shorts",
+        category: "Shirts",
         details: {
           material: "cotton",
-          fit: "Sits at the waist, slim through the thigh.",
+          fit: "Fitted shoulders and chest, straight through the waist and hip.",
           maintenance: "machine wash warm with like colors, tumble dry low",
-          additional: "9-inch inseam"
+          additional: "Crew neck. Short sleeves with fixed, rolled cuffs."
         },
         images: [
-          '53368-1.jpg',
-          '53368-2.jpg',
-        ]
-      },
-      {
-        name: "Short Sleeve Wrap-Front Top",
-        id: 53369,
-        featured: true,
-        price: 128.5,
-        color: "black",
-        size: 8,
-        gender:'women',
-        quantity: 10,
-        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Shoes",
-        details: {
-          material: "leather",
-          fit: "Breathable synthetic lining. Insole with added stability in the heel.",
-          maintenance: "",
-          additional: "3.3-inch heel height"
-        },
-        images: [
-          '53369-1.jpg',
-        ]
-      },
-      {
-        name: "Squareneck Short Sleeve Bodysuit",
-        id: 53370,
-        featured: false,
-        price: 114.99,
-        color: "navy",
-        size: 10,
-        gender:'women',
-        quantity: 10,
-        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Shoes",
-        details: {
-          material: "suede",
-          fit: "Our Advanced Comfort Technology insoles include shock absorption in the heel, arch support and breathable flex on the toe pads.",
-          maintenance: "",
-          additional: "Flat laces"
-        },
-        images: [
-          '53370-1.jpg',
-          '53370-2.jpg',
+          '53366-1.png',
         ]
       },
     ]

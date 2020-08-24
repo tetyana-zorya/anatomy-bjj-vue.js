@@ -1,16 +1,17 @@
 <template>
   <div>
+    <v-container style="padding:4em;">
     <section class="wrapper">
       <div class="flex-col">
-        <img  class="flex-col--2" :src="makeImagePath(product)" alt="">
+        <img  style="padding-right:2em;" class="flex-col--2" :src="makeImagePath(product)" alt="">
         <div class="flex-col--2" >
-          <h2>{{ product.name }}</h2>
-          <button @click="addToCart" class="btn btn--grey">Add to Cart</button>
+          <h2 style="padding-bottom:.5em;">{{ product.name }}</h2>
           <p>Price: ${{ product.price }}</p>
           <p>Size: {{ product.size }}</p>
           <p>Color: {{ product.color }}</p>
           <p><em>{{ product.quantity }} left in stock</em></p>
-          <h3>Details</h3>
+           <button @click="addToCart" class="btn btn--grey">Add to Cart</button>
+          <h3 style="padding-bottom:.5em; padding-top:.5em;">Details</h3>
           <ul>
             <li>Material: {{ product.details.material }}</li>
             <li>Fit: {{ product.details.fit }}</li>
@@ -20,6 +21,7 @@
         </div>
       </div>
     </section>
+    </v-container>
   </div>
 </template>
 
@@ -70,7 +72,7 @@ export default {
   background-color: #2c3e50;
   color: #FFF;
   &:hover, &:focus {
-    background-color: #42b983;
+    background-color: #D4E157;
   }
 }
 </style>

@@ -9,8 +9,8 @@
 
         <v-flex xs12 sm12 lg12 md12 d-flex justify-content-center>
           <span class="center"> 
-              <router-link to="/shop" class="no-under"><v-btn depressed text class="shop-nav">Shop</v-btn></router-link>
-              <router-link to="/cart" class="no-under"><v-btn depressed text class="cart-nav">Cart<counter-badge :count="cartCount"></counter-badge></v-btn></router-link>
+              <router-link to="/shop" class="no-under"><v-btn depressed text class="shop-nav nav-btn">Shop</v-btn></router-link>
+              <router-link to="/cart" class="no-under"><v-btn depressed text class="cart-nav nav-btn">Cart<counter-badge style="color:black; background-color:#D4E157" :count="cartCount"></counter-badge></v-btn></router-link>
               </span>
         </v-flex>
     
@@ -46,6 +46,9 @@ export default {
 }
 .cart-nav {
     padding-left:.5em;
+}
+.nav-btn:hover {
+  color: #D4E157!important;
 }
 .v-btn:hover:before {
       background-color: transparent;
